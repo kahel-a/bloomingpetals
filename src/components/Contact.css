@@ -1,0 +1,31 @@
+.contact__wrap{
+  display:grid;
+  grid-template-columns: 1fr 420px;
+  gap:36px;
+  align-items:start;
+}
+.contact__left{ color:#5e4850 }
+.contact-info{ margin-top:12px; display:flex; flex-direction:column; gap:8px }
+
+.contact__form{
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  background:#fff;
+  padding:20px;
+  border-radius:12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+}
+.contact__form input,
+.contact__form textarea{
+  padding:12px;
+  border-radius:8px;
+  border:1px solid #f3c7cf;
+  font-family: inherit;
+}
+.contact__form button{ align-self:flex-start }
+
+@media (max-width:900px){
+  .contact__wrap{ grid-template-columns: 1fr; }
+  .contact__form{ width:100% }
+}

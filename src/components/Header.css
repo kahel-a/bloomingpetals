@@ -1,0 +1,53 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  transition: background 0.28s ease, box-shadow 0.28s ease, padding 0.28s ease;
+  background: transparent; /* fully transparent */
+  padding: 20px 0;
+}
+
+.header--scrolled {
+  background: rgba(255,250,252,0.98); /* optional: slightly opaque on scroll */
+  box-shadow: 0 6px 22px var(--shadow);
+  padding: 12px 0;
+}
+
+.header__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* keeps brand and nav separated */
+  flex-wrap: wrap;
+}
+
+/* Make nav align to left */
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 16px; /* spacing between links */
+  margin-left: 0; /* ensure no extra spacing */
+}
+
+/* Simple clickable text style */
+.nav span {
+  color: #5f4c51;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: pointer;
+  transition: color 0.18s;
+}
+
+.nav span:hover {
+  color: var(--accent);
+}
+
+/* Optional CTA/contact styling */
+.cta-link {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.cart-link {
+  color: #5f4c51;
+  text-decoration: underline;
+}

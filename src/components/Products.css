@@ -1,0 +1,126 @@
+/* Layout for top section */
+.top-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+.top-icons {
+  display: flex;
+  align-items: center;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.1);
+}
+
+.icon-img {
+  width: 30px;
+  height: 30px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+/* Cart count bubble */
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background-color: #b23b3b;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* Title style */
+.products-title {
+  font-family: "Playfair Display", serif; /* Elegant serif like your header */
+  font-size: 2.5rem;
+  text-align: center;
+  color: #7a1c1c;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: #b8744f;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+/* Product grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px 80px;
+  justify-items: center;
+}
+
+.product-card {
+  background: #fff8f8;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+}
+
+.product-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.1rem;
+  color: #531919;
+}
+
+.product-card p {
+  color: #7b3636;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.buy-btn,
+.add-btn {
+  background-color: #8b2e2e;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.85rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.buy-btn:hover,
+.add-btn:hover {
+  background-color: #a64646;
+  transform: translateY(-2px);
+}

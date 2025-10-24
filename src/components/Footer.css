@@ -1,0 +1,55 @@
+.footer {
+  background: rgba(255,250,252,0.98);
+  transition: background 0.28s ease, box-shadow 0.28s ease, padding 0.28s ease;
+  padding: 20px 0;
+  color: #5f4c51;
+  font-family: "Arial", sans-serif;
+}
+
+.footer__inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.logo-mark {
+  font-size: 22px;
+}
+
+.brand-title {
+  font-family: "Playfair Display";
+  color: var(--accent);
+  font-size: 18px;
+}
+
+.brand-sub {
+  font-size: 12px;
+  color: #82636b;
+  margin-top: 2px;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  font-size: 14px;
+}
+
+.footer-contact p {
+  margin: 0;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 12px;
+  color: #82636b;
+  font-size: 12px;
+}
